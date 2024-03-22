@@ -15,7 +15,11 @@ header {
 
 body {
   margin: 0;
-  padding-top: 100px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 .body-content {
@@ -33,8 +37,7 @@ body {
 }
 
 footer {
-  position: static;
-  left: 0;
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: rgb(233, 233, 233);
@@ -56,11 +59,20 @@ footer {
   left: -350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 30px;
   align-items: center;
   text-align: center;
   font-size: 3rem;
   transition: 0.3s ease;
+}
+
+.off-screen-menu li {
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border: 2px #e1e1e1;
+  border-style: solid none;
 }
 
 .off-screen-menu.active {
