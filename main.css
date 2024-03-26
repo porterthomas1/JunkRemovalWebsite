@@ -26,6 +26,36 @@ body {
   text-align: center;
 }
 
+.body-content i {
+  font-size: 3.5rem;
+  padding: 20px;
+  padding-top: 35px;
+  background-color: rgb(149, 84, 46);
+  width: 90px;
+  height: 75px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  top: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.body-content li {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+hr {
+  color: rgb(233, 233, 233);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .container {
   max-width: 95vw;
   margin: 20px auto;
@@ -37,7 +67,7 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
   background-color: rgb(233, 233, 233);
@@ -106,12 +136,14 @@ nav h1 {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 0;
+  font-size: 2.5rem;
 }
 
 .ham-menu {
   height: 50px;
   width: 50px;
   position: absolute;
+  margin-top: 10px;
 }
 
 .ham-menu span {
@@ -146,4 +178,20 @@ nav h1 {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.contact-btn {
+  display: block;
+  background-color: rgb(149, 84, 46);
+  width: 20%;
+  margin: auto;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact-btn:hover {
+  background-color: rgb(172, 111, 75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
