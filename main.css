@@ -22,6 +22,7 @@ body {
 
 #page-container {
   flex: 1; /* Allow the page container to grow and fill the remaining space */
+  padding-bottom: 60px;
 }
 
 .body-content {
@@ -72,7 +73,9 @@ footer {
   width: 100%;
   background-color: rgb(233, 233, 233);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: auto; /* Push the footer to the bottom of the container */
+  margin-top: auto;
+  position: absolute; /* Ensure relative positioning */
+  bottom: 1;
 }
 
 .footer-content {
