@@ -15,6 +15,8 @@ header {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #page-container {
@@ -63,7 +65,7 @@ hr {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 600px;
+  min-height: 600px;
 }
 
 footer {
@@ -72,6 +74,7 @@ footer {
   width: 100%;
   background-color: rgb(233, 233, 233);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
 .footer-content {
