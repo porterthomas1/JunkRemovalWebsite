@@ -77,7 +77,7 @@ body {
 
 footer {
   width: 100%;
-  background-color: rgb(233, 233, 233);
+  background-color: #a8a8a8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: auto;
   padding: 10px 0;
@@ -119,6 +119,7 @@ footer {
 .ham-menu.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
+  background-color: rgb(33, 33, 33);
 }
 
 .ham-menu.active span:nth-child(2) {
@@ -128,6 +129,7 @@ footer {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: rgb(33, 33, 33);
 }
 
 header {
@@ -144,8 +146,7 @@ header {
 }
 
 .horizontal_line {
-  background-color: rgb(193, 193, 193);
-  border: 5px black;
+  background-color: rgb(33, 33, 33);
   width: 100%;
   height: 0.5px;
   margin-left: -20px;
@@ -181,11 +182,13 @@ html {
 
 #main-header {
   transition: height 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #main-header.scrolled {
   height: 70px;
   transition: height 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #main-header.scrolled #logo-container {
@@ -205,7 +208,7 @@ nav h1 {
 }
 
 .off-screen-menu {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(175, 85, 43);
   height: 100vh;
   width: 100%;
   max-width: 350px;
@@ -226,18 +229,19 @@ nav h1 {
   margin-left: -40px;
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .off-screen-menu li a {
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: black;
+  color: rgb(33, 33, 33);
   text-decoration: none;
 }
 
 .off-screen-menu li:hover {
-  background-color: rgb(169, 169, 169);
+  background-color: rgb(192, 150, 130);
 }
 
 .off-screen-menu.active {
@@ -248,4 +252,5 @@ nav h1 {
   display: flex;
   flex-direction: column; /* Allow the page container to grow and fill the remaining space */
   min-height: 100vh;
+  background-color: rgb(255, 255, 255);
 }
