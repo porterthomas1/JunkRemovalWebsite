@@ -1,3 +1,7 @@
+a {
+  font-family: "Arial", sans-serif;
+}
+
 .background-image {
   height: 500px;
   width: 100vw;
@@ -163,6 +167,18 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  font-family: "Arial", sans-serif;
+}
+
+li {
+  font-family: "Arial", sans-serif;
+}
+
 .logo {
   height: 130px;
   object-fit: scale-down;
@@ -231,6 +247,8 @@ nav h1 {
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  background-color: #dfb67a;
+  border-color: black;
 }
 
 .off-screen-menu li a {
@@ -242,7 +260,7 @@ nav h1 {
 }
 
 .off-screen-menu li:hover {
-  background-color: rgb(192, 150, 130);
+  background-color: #e1c59d;
 }
 
 .off-screen-menu.active {
@@ -254,4 +272,8 @@ nav h1 {
   flex-direction: column; /* Allow the page container to grow and fill the remaining space */
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
+}
+
+p {
+  font-family: "Arial", sans-serif;
 }
