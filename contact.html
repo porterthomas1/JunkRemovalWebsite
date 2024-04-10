@@ -40,17 +40,44 @@
     </header>
       <div class="container" style="margin-top: 140px">
         <div class="body-content">
-          <h1>Phone Number:</h1>
-          <p>(503) 577-5581</p>
-          <h1>Email:</h1>
-          <p>info@mountainpeakjunkrelief.com</p>
+          <h1>Contact Us</h1>
+          <form
+          action="https://formspree.io/f/mbjnpazr"
+          method="POST"
+          class="contact-form"
+          >
+            <label>
+              Name:
+            </label> 
+              <input type="text" name="Name" id="Name" required=""> 
+            <label>
+              Email:
+            </label>
+              <input type="email" name="Email" id="Email" required="">
+            <label>
+              Phone Number (Optional):
+            </label>
+              <input type="phone" name="Phone" id="Phone" placeholder="(555) 555-5555">
+            <label>
+              City:
+            </label>
+              <input type="text" name="City" id="City" required="">
+            <label>
+              Message:
+            </label>
+              <textarea name="Message" id="Message" required=""></textarea>
+              <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
       <footer>
         <div class="footer-content">
-          <h1>Hours</h1>
+          <h2>Hours</h2>
           <p>Monday - Friday</p>
-          <p>7:00am - 7:00pm</p>
+          <p>8:00am - 6:00pm</p>
+          <h2>Email</h2>
+          <p>info@mountainpeakjunkrelief.com</p>
         </div>
       </footer>
     </div>

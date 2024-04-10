@@ -3,10 +3,10 @@ a {
 }
 
 .background-image {
-  height: 500px;
+  max-height: 550px;
   width: 100vw;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: 46% 54%;
 }
 
 #background-image-container {
@@ -21,7 +21,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
+  min-height: 100vh;
 }
 
 .body-content {
@@ -32,7 +32,7 @@ body {
   font-size: 3.5rem;
   padding: 20px;
   padding-top: 35px;
-  background-color: rgb(175, 85, 43);
+  background-color: rgb(187, 159, 99);
   width: 90px;
   height: 75px;
   border-radius: 50%;
@@ -49,7 +49,7 @@ body {
 
 .contact-btn {
   display: block;
-  background-color: rgb(182, 93, 52);
+  background-color: rgb(187, 159, 99);
   width: 20%;
   margin: auto;
   padding: 10px;
@@ -60,8 +60,19 @@ body {
 }
 
 .contact-btn:hover {
-  background-color: rgb(179, 110, 78);
+  background-color: rgb(187, 159, 99);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  font-family: "Arial", sans-serif;
+  font-size: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50vw;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .container {
@@ -93,6 +104,93 @@ footer {
   text-align: center;
 }
 
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+form label,
+form legend {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  height: max-content;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+
+form [type="text"],
+form [type="email"],
+.StripeElement {
+  width: 100%;
+}
+
+form [type="button"],
+form [type="submit"],
+form [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  appearance: button;
+  font-size: 1rem;
+  background-color: rgb(187, 159, 99);
+  border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+form [type="button"]:focus,
+form [type="submit"]:focus,
+form [type="reset"]:focus {
+  outline: none;
+  background-color: rgb(149, 126, 77);
+}
+
+form [type="button"]:hover,
+form [type="submit"]:hover,
+form [type="reset"]:hover {
+  outline: none;
+  background-color: rgb(214, 186, 123);
+}
+
+form select {
+  text-transform: none;
+}
+
 .ham-menu {
   height: 50px;
   width: 50px;
@@ -104,7 +202,7 @@ footer {
 .ham-menu span {
   height: 5px;
   width: 100%;
-  background-color: rgb(175, 85, 43);
+  background-color: rgb(187, 159, 99);
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -225,7 +323,7 @@ nav h1 {
 }
 
 .off-screen-menu {
-  background-color: rgb(175, 85, 43);
+  background-color: rgb(187, 159, 99);
   height: 100vh;
   width: 100%;
   max-width: 350px;
@@ -247,7 +345,7 @@ nav h1 {
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #dfb67a;
+  background-color: #e0e0e0;
   border-color: black;
 }
 
@@ -260,7 +358,7 @@ nav h1 {
 }
 
 .off-screen-menu li:hover {
-  background-color: #e1c59d;
+  background-color: #c9c9c9;
 }
 
 .off-screen-menu.active {
